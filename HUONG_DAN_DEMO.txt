@@ -1,0 +1,26 @@
+LUMINA — KỊCH BẢN DEMO 5–7 PHÚT
+
+1. Vai trò Tư vấn viên, Cơ sở 1:
+   Thêm học viên, điền phụ huynh và chọn Toán 9 · Nền tảng. Lưu một lần.
+2. Đổi vai trò Quản lý cơ sở:
+   Lớp học > Toán 9 · Nền tảng > Xem chi tiết. Học viên đã có trong lớp.
+3. Đổi sang Kế toán:
+   Học phí & công nợ. Khoản phải thu mới ở đầu danh sách.
+   Xem QR minh họa, ghi nhận 1.920.000 đ hoặc thu một phần.
+4. Đổi sang Giáo viên:
+   Điểm danh > chọn buổi gần nhất của lớp Toán. Đánh vắng và lưu.
+   Mở Điện thoại phụ huynh để thấy thông báo giả lập.
+5. Đổi sang Tư vấn viên:
+   Chăm sóc học viên > Chạy tác tử AI (cần cấu hình khóa).
+   Nếu chưa có khóa, Diễn tập chỉ để tập quy trình, không gọi LLM.
+   Dữ liệu mẫu có 2 em tốt, 2 em cần tư vấn, 1 em nợ phí,
+   1 em không có lớp tiếp theo. Học viên mới sẽ được xử lý theo dữ liệu thực.
+   Xem các công cụ, đọc căn cứ, sửa một bản nháp rồi duyệt và gửi.
+   Tin xuất hiện trong điện thoại giả lập; tác tử không tự gửi.
+6. Đổi sang Giám đốc:
+   Báo cáo cập nhật số tiền vừa thu. Nhật ký có cả thao tác người và tác tử.
+   Danh mục > Khôi phục dữ liệu mẫu để tập lại từ đầu.
+
+Đổi cơ sở: chọn Giám đốc, đổi cơ sở ở thanh trên, rồi chọn vai trò khác.
+Đổi giáo viên: ở vai trò Giáo viên, dùng ô chọn giáo viên trên trang.
+Không có thanh toán, Zalo hay đối soát ngân hàng thật trong bản demo.

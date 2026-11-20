@@ -1,0 +1,5 @@
+﻿import {getScope,errorResponse} from "@/lib/store";
+import {assert} from "@/lib/domain";
+import {runAgent,runRehearsal} from "@/lib/agent";
+export async function POST(request:Request){try{const scope=getScope(request);assert(scope.role==="advisor","Chỉ tư vấn viên được chạy tác tử chăm sóc.");const body:any=await request.json();const rehearsal=body.mode==="rehearsal";const encoder=new TextEncoder();const stream=new ReadableStream({async start(controller){let open=true;const emit=(event:object)=>{if(open)try{controller.enqueue(encoder.encode(`data: ${JSON.stringify({...event,time:new Date().toISOString()})}\n\n`));}catch{open=false;}};try{await(rehearsal?runRehearsal(scope,emit):runAgent(scope,emit));}catch(e){emit({type:"error",message:e instanceof Error?e.message:"Có lỗi tác tử."});}finally{if(open)controller.close();}},cancel(){/* Already-created drafts remain pending, never sent automatically. */}});return new Response(stream,{headers:{"Content-Type":"text/event-stream; charset=utf-8","Cache-Control":"no-cache, no-transform","X-Accel-Buffering":"no"}});}catch(e){return errorResponse(e);}}
+
